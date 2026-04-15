@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog da Agatha Bento</title>
+    <style>
+        body {
+            max-width: 1000px; /* Limita a largura máxima do site */
+            margin: 0 auto; /* Centraliza o conteúdo na tela */
+            font-family: Arial;
+            color: #3a0ca3; /* Cor padrão do texto */
+            background-color: #f3e5f5; /* Cor de fundo da página */
+            padding: 20px; /* Espaço interno do body */
+            display: flex; /* Coloca os elementos (main e aside) lado a lado */
+            flex-wrap: wrap; /* Permite quebrar linha em telas menores*/
+        }
+        
+        header, footer {
+            width: 100%; /*Faz header e footer ocuparem a linha inteira */
+        }
+        
+        main {
+            width: 70%; /* Define que o conteúdo principal ocupa 70% */
+        }
+        
+        aside {
+            width: 30%; /* ocupa 30% do conteudo */
+            padding: 15px; /* Espaçamento interno */
+            background-color: #e9d8fd; /* Cor de fundo do aside */
+            border-radius: 15px; /* Bordas arredondadas */
+            margin-top: 20px; /* Espaço acima do aside */
+            height: fit-content; /* Faz a altura se ajustar ao conteúdo */
+        }
+        
+        h1, h2, h3 {
+            color: #6a0dad; /* Cor dos títulos */
+        }
+        
+        header {
+            text-align: center; /* Centraliza o conteúdo */
+            background: linear-gradient(135deg, #9b5de5, #7209b7); /* Fundo em degradê (primeiro bloco de imagem)*/
+            padding: 40px 20px; /* Espaçamento interno */
+            border-radius: 15px; /* Bordas arredondadas */
+            margin-bottom: 30px; /* Espaço abaixo do header */
+        }
+        
+        header h1 {
+            margin-bottom: 15px; /* Espaço abaixo do titulo */
+        }
+        
+        header img {
+            border-radius: 50%; /* Deixa a imagem redonda */
+            width: 180px; /* Largura fixa */
+            height: 180px; /* Altura fixa */
+            object-fit: cover; /* Ajusta a imagem sem distorcer */
+            border: 4px solid white; /* Borda branca envolta da imagem */
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Sombra */
+        }
+        
+        header p {
+            margin-top: 15px; /* Espaço acima */
+            font-style: italic; /* Texto em itálico */
+            color: #e0d4f7; /* Cor mais clara */
+            font-size: 1.1em; /* Tamanho um pouco maior */
+        }
+        
+        main hr {
+            border: 0; /* Remove borda padrão */
+            height: 2px; /* Altura da linha */
+            background-color: #9b5de5; /* Cor da linha */
+            margin: 40px 0; /* Espaço acima e abaixo */
+            border-radius: 2px; /* Bordas levemente arredondadas */
+        }
+        
+        h2 {
+            border-bottom: 3px solid #6a0dad; /* Linha abaixo do título */
+            display: inline-block; /* Faz a linha acompanhar o texto */
+            padding-bottom: 5px; /* Espaço entre texto e linha */
+            margin-bottom: 15px; /* Espaço abaixo */
+        }
+        
+        h3 {
+            margin-top: 20px; /* Espaço acima */
+            color: #8f00ff; /* Cor diferente para subtítulos */
+        }
+        
+        p {
+            text-align: justify; /* Alinha o texto dos dois lados */
+            font-size: 1.05em; /* Tamanho do texto */
+        }
+        
+        ol, ul {
+            margin-left: 25px; /* Recuo da lista */
+            margin-bottom: 20px; /* Espaço abaixo */
+        }
+        
+        main img {
+            display: block; /* Permite centralizar */
+            margin: 30px auto; /* Centraliza a imagem */
+            border-radius: 15px; /* Bordas arredondadas */
+            max-width: 100%; /* Responsivo */
+            height: auto; /* Mantém proporção */
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2); /* Sombra */
+            border: 3px solid #6a0dad; /* Borda colorida */
+        }
+        
+        footer {
+            text-align: center; /* Centraliza texto */
+            margin-top: 50px; /* Espaço acima */
+            padding: 25px; /* Espaço interno */
+            background: linear-gradient(135deg, #7209b7, #9b5de5); /* Degradê */
+            color: white; /* Cor do texto */
+            border-radius: 15px; /* Bordas arredondadas */
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2); /* Sombra */
+            font-size: 1.05em; /* Tamanho do texto */
+        }
+        
+        strong {
+            color: #4a0072; /* Cor diferente para texto em negrito */
+        }
+        
+        /* RESPONSIVO (tablet e celular) */
+        @media (max-width: 768px) {
+            main, aside {
+                width: 100%; /* Faz os dois ficarem um embaixo do outro */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header> <!--topo-->
+        <h1>Blog Da Agatha</h1>
+
+        <img src="agatha.jpg" alt="Foto da Agatha Isabelli Wronski Bento" width="280">
+
+        <p><i>Agatha Isabelli Wrosnki Bento | 3º Ano de Informática</i></p>
+    </header>
+
+    <main>
+        <hr>
+        <h2>Biografia</h2>
+        <p>
+            Olá, meu nome é Agatha Isabelli Wronski Bento. Nasci em Cascavel (PR) no dia 06/01/2009.
+            Desde de criança, eu era apaixonada por arte, natureza, historia e para quebrar um pouco essa linha
+            por esporte também. E isso me define muito bem hoje em dia, mudando minha forma de ver o mundo e as
+            pessoas.<br>
+            Atualmente, sou aluna do 3º ano do Ensino Médio Integrado ao Técnico em Informática no <strong>IFPR - Campus
+                Cascavel</strong>. Apesar da formação técnica, pretendo seguir carreira na área de Biomedicina,
+            unindo minha experiência prática em laboratório que adquiri estudando na instituição, com a minha paixão por
+            natureza.
+        </p>
+        <hr>
+        <h2>Minhas Preferências</h2>
+        <h3>Esportes favoritos</h3>
+        <ol>
+            <li>Vôlei de Quadra</li>
+            <li>Vôlei de Praia</li>
+            <li>Patinação artística</li>
+            <li>Ginástica</li>
+        </ol>
+
+        <h3>Musicais Favoritos</h3>
+        <ul>
+            <li>K-pop</li> <!--"-lista"-->
+            <li>Pop</li>
+            <li>Rock</li>
+            <li>Musica Clássica</li>
+        </ul>
+        <h3>Comidas Favoritas</h3>
+        <ul>
+            <li>strogonoff</li>
+            <li>Macarrão com carne de panela/moída</li>
+            <li>Pizza/Hamburguer</li>
+        </ul>
+
+        <hr> <!--linha"______"-->
+        <h2>Esportes na visão da Agatha</h2>
+        <P>Sou atleta a 7 anos, minha modalidade principal atualmente é o vôlei de quadra porém
+            já fui atleta de outras modalidades como kung fu, aonde treinei por muitos anos até me
+            encontrar no vôlei. Cheguei a jogar federada, pelo VCC-Vôlei Clube Cascavel mas infelizmente
+            não pude continuar por questões estudantis. Joguei muitos campeonatos tanto federada como pela
+            instituição na qual estudo, como por exemplo, o JIFSPR, um campeonato que guardei no coração,
+            onde conheci pessoas maravilhosas e joguei jogos incríveis.
+        </P>
+        <hr>
+        <img src="agatinha.jpg" alt="Foto da Agatha Isabelli Wronski Bento, JIFSPR 2025" width="280">
+    </main>
+    <footer>
+        <p>&copy; 2026 - Blog da Agatha Bento</p><!--fica no final, com rodapés, contatos ou direitos autorais-->
+    </footer>
+</body>
+
+</html>
