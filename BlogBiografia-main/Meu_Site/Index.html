@@ -7,124 +7,133 @@
     <title>Blog da Agatha Bento</title>
     <style>
         body {
-            max-width: 1000px; /* Limita a largura máxima do site */
-            margin: 0 auto; /* Centraliza o conteúdo na tela */
-            font-family: Arial;
-            color: #3a0ca3; /* Cor padrão do texto */
-            background-color: #f3e5f5; /* Cor de fundo da página */
-            padding: 20px; /* Espaço interno do body */
-            display: flex; /* Coloca os elementos (main e aside) lado a lado */
-            flex-wrap: wrap; /* Permite quebrar linha em telas menores*/
+            max-width: 1000px; /*limita a largura máxima do site*/
+            margin: 0 auto; /*centraliza o conteúdo na tela*/
+            font-family: Arial; 
+            color: #3a0ca3; /*cor padrão do texto*/
+            background: linear-gradient(135deg, #e9d8fd,#B7A3E3,#9b5de5);
+            padding: 20px; /*espaço interno do body*/
+           
         }
-        
+
+        .conteudo {
+                display: flex;
+                gap: 20px; /* espaço entre main e aside */
+            }
+
         header, footer {
-            width: 100%; /*Faz header e footer ocuparem a linha inteira */
+            width: 100%; /*faz header e footer ocuparem a linha inteira*/
         }
         
         main {
-            width: 70%; /* Define que o conteúdo principal ocupa 70% */
+            width: 70%; /*define que o conteúdo principal ocupa 70%*/
         }
         
         aside {
-            width: 30%; /* ocupa 30% do conteudo */
-            padding: 15px; /* Espaçamento interno */
-            background-color: #e9d8fd; /* Cor de fundo do aside */
-            border-radius: 15px; /* Bordas arredondadas */
-            margin-top: 20px; /* Espaço acima do aside */
-            height: fit-content; /* Faz a altura se ajustar ao conteúdo */
+            width: 30%; /*ocupa 30% do conteudo */
+            padding: 15px; /*espaçamento interno */
+            background: linear-gradient(135deg, #e9d8fd,#B7A3E3,#9b5de5,#7209b7);
+            border-radius: 15px; /*bordas arredondadas */
+            margin-top: 20px; /*espaço em cima do aside*/
+            height: auto; /*faz a altura se ajustar ao conteúdo*/
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2); /*sombra*/
         }
         
         h1, h2, h3 {
-            color: #6a0dad; /* Cor dos títulos */
+            color: #6a0dad; /*cor dos títulos*/
         }
         
         header {
-            text-align: center; /* Centraliza o conteúdo */
-            background: linear-gradient(135deg, #9b5de5, #7209b7); /* Fundo em degradê (primeiro bloco de imagem)*/
-            padding: 40px 20px; /* Espaçamento interno */
-            border-radius: 15px; /* Bordas arredondadas */
-            margin-bottom: 30px; /* Espaço abaixo do header */
+            text-align: center; /*centraliza o conteúdo*/
+            background: linear-gradient(135deg,#B7A3E3,#9b5de5,#7209b7); /*fundo em degradê (primeiro bloco de imagem)*/
+            padding: 40px 20px; /*espaçamento interno*/
+            border-radius: 15px; /*bordas arredondadas*/
+            margin-bottom: 30px; /*espaço abaixo do header*/
         }
         
         header h1 {
-            margin-bottom: 15px; /* Espaço abaixo do titulo */
+            margin-bottom: 15px; /*espaço abaixo do titulo*/
         }
         
         header img {
-            border-radius: 50%; /* Deixa a imagem redonda */
-            width: 180px; /* Largura fixa */
-            height: 180px; /* Altura fixa */
-            object-fit: cover; /* Ajusta a imagem sem distorcer */
-            border: 4px solid white; /* Borda branca envolta da imagem */
-            box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Sombra */
+            border-radius: 50%; /*deixa a imagem redonda*/
+            width: 180px; /*largura fixa*/
+            height: 180px; /*altura fixa*/
+            object-fit: cover; /*ajusta a imagem sem distorcer*/
+            border: 4px solid white; /*borda branca envolta da imagem*/
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3); /*sombra*/
         }
         
         header p {
-            margin-top: 15px; /* Espaço acima */
-            font-style: italic; /* Texto em itálico */
-            color: #e0d4f7; /* Cor mais clara */
-            font-size: 1.1em; /* Tamanho um pouco maior */
+            margin-top: 15px; /*espaço em cima*/
+            font-style: italic; /*fonte em itálico*/
+            color: #e0d4f7; /*cor do texto*/
+            font-size: 1.1em; /*aumenta o tamanho*/
+            text-align: center; /*deixa no meio*/
         }
         
         main hr {
-            border: 0; /* Remove borda padrão */
-            height: 2px; /* Altura da linha */
-            background-color: #9b5de5; /* Cor da linha */
-            margin: 40px 0; /* Espaço acima e abaixo */
-            border-radius: 2px; /* Bordas levemente arredondadas */
+            border: 0; /*remove margin padrão*/
+            height: 2px; /*altura da linha*/
+            background-color: #9b5de5; /*cor da linha*/
+            margin: 40px 0; /*espaço acima e abaixo*/
+            border-radius: 2px; /*bordas arredondadas*/
         }
         
         h2 {
-            border-bottom: 3px solid #6a0dad; /* Linha abaixo do título */
-            display: inline-block; /* Faz a linha acompanhar o texto */
-            padding-bottom: 5px; /* Espaço entre texto e linha */
-            margin-bottom: 15px; /* Espaço abaixo */
+            border-bottom: 3px solid #6a0dad; /*linha abaixo do título*/
+            display: inline-block; /*faz a linha acompanhar o texto*/
+            padding-bottom: 5px; /*espaço entre texto e linha*/
+            margin-bottom: 15px; /*espaço abaixo*/
         }
         
         h3 {
-            margin-top: 20px; /* Espaço acima */
-            color: #8f00ff; /* Cor diferente para subtítulos */
+            margin-top: 20px; /*espaço em cima */
+            color: #8f00ff; /* cor subtítulos */
         }
         
         p {
-            text-align: justify; /* Alinha o texto dos dois lados */
-            font-size: 1.05em; /* Tamanho do texto */
+            text-align: justify; /*alinha o texto*/
+            font-size: 1.05em; /*tamanho do texto*/
         }
         
         ol, ul {
-            margin-left: 25px; /* Recuo da lista */
-            margin-bottom: 20px; /* Espaço abaixo */
+            margin-left: 25px; /*Recuo da lista*/
+            margin-bottom: 20px; /*Espaço abaixo*/
         }
         
         main img {
-            display: block; /* Permite centralizar */
-            margin: 30px auto; /* Centraliza a imagem */
-            border-radius: 15px; /* Bordas arredondadas */
-            max-width: 100%; /* Responsivo */
-            height: auto; /* Mantém proporção */
-            box-shadow: 0 6px 15px rgba(0,0,0,0.2); /* Sombra */
-            border: 3px solid #6a0dad; /* Borda colorida */
+            display: block; /*permite centralizar*/
+            margin: 30px auto; /*centraliza a imagem*/
+            border-radius: 15px; /*bordas redondas*/
+            max-width: 100%; /*responsivo*/
+            height: auto; /*mantém proporção*/
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2); /*sombra*/
+            border: 3px solid #6a0dad; /*borda colorida*/
         }
         
         footer {
-            text-align: center; /* Centraliza texto */
-            margin-top: 50px; /* Espaço acima */
-            padding: 25px; /* Espaço interno */
-            background: linear-gradient(135deg, #7209b7, #9b5de5); /* Degradê */
-            color: white; /* Cor do texto */
-            border-radius: 15px; /* Bordas arredondadas */
-            box-shadow: 0 6px 15px rgba(0,0,0,0.2); /* Sombra */
-            font-size: 1.05em; /* Tamanho do texto */
+            text-align: center; /*centraliza texto*/
+            margin-top: 50px; /*espaço acima*/
+            padding: 25px; /*espaço interno*/
+            background: linear-gradient(135deg,#B7A3E3,#9b5de5,#7209b7);
+            color: white; /*cor do texto*/
+            border-radius: 15px; /*bordas redondas*/
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2); /*sombra*/
+            font-size: 1.05em; /*tamanho do texto*/
         }
         
         strong {
-            color: #4a0072; /* Cor diferente para texto em negrito */
+            color: #4a0072; /*cor texto em negrito*/
         }
         
-        /* RESPONSIVO (tablet e celular) */
+        /*RESPONSIVO (tablet e celular)*/
         @media (max-width: 768px) {
+            .conteudo {
+                flex-direction: column; /*essa linha vai ajustar o aside e o conteudo principal, para eles não ficxarem um do lado do outro quando em telas menores*/
+            }
             main, aside {
-                width: 100%; /* Faz os dois ficarem um embaixo do outro */
+                width: 100%; /*faz os dois ficarem um embaixo do outro na tela toda, se tirar fica um espaçamento do lado quando coloca F12 celular*/
             }
         }
     </style>
@@ -136,9 +145,9 @@
 
         <img src="agatha.jpg" alt="Foto da Agatha Isabelli Wronski Bento" width="280">
 
-        <p><i>Agatha Isabelli Wrosnki Bento | 3º Ano de Informática</i></p>
+        <p><i>Agatha Isabelli Wrosnki Bento <br> 3º Ano de Informática</i></p>
     </header>
-
+    <div class="conteudo">
     <main>
         <hr>
         <h2>Biografia</h2>
@@ -152,7 +161,21 @@
             unindo minha experiência prática em laboratório que adquiri estudando na instituição, com a minha paixão por
             natureza.
         </p>
+       
+        <hr> <!--linha"______"-->
+        <h2>Esportes na visão da Agatha</h2>
+        <P>Sou atleta a 7 anos, minha modalidade principal atualmente é o vôlei de quadra porém
+            já fui atleta de outras modalidades como kung fu, aonde treinei por muitos anos até me
+            encontrar no vôlei. Cheguei a jogar federada, pelo VCC-Vôlei Clube Cascavel mas infelizmente
+            não pude continuar por questões estudantis. Joguei muitos campeonatos tanto federada como pela
+            instituição na qual estudo, como por exemplo, o JIFSPR, um campeonato que guardei no coração,
+            onde conheci pessoas maravilhosas e joguei jogos incríveis.
+        </P>
         <hr>
+        <img src="agatinha.jpg" alt="Foto da Agatha Isabelli Wronski Bento, JIFSPR 2025" width="280">
+    </main> 
+    <aside>
+    <hr>
         <h2>Minhas Preferências</h2>
         <h3>Esportes favoritos</h3>
         <ol>
@@ -175,19 +198,8 @@
             <li>Macarrão com carne de panela/moída</li>
             <li>Pizza/Hamburguer</li>
         </ul>
-
-        <hr> <!--linha"______"-->
-        <h2>Esportes na visão da Agatha</h2>
-        <P>Sou atleta a 7 anos, minha modalidade principal atualmente é o vôlei de quadra porém
-            já fui atleta de outras modalidades como kung fu, aonde treinei por muitos anos até me
-            encontrar no vôlei. Cheguei a jogar federada, pelo VCC-Vôlei Clube Cascavel mas infelizmente
-            não pude continuar por questões estudantis. Joguei muitos campeonatos tanto federada como pela
-            instituição na qual estudo, como por exemplo, o JIFSPR, um campeonato que guardei no coração,
-            onde conheci pessoas maravilhosas e joguei jogos incríveis.
-        </P>
-        <hr>
-        <img src="agatinha.jpg" alt="Foto da Agatha Isabelli Wronski Bento, JIFSPR 2025" width="280">
-    </main>
+    </aside>
+    </div>
     <footer>
         <p>&copy; 2026 - Blog da Agatha Bento</p><!--fica no final, com rodapés, contatos ou direitos autorais-->
     </footer>
